@@ -26,11 +26,6 @@ const Quizes = (quiz) => {
       }
    };
 
-   const showAnswer = () => {
-      options.find(element => element === correctAnswer)
-   }
-
-
 
    return (
       <div className="bg-info p-3 rounded mb-4 border border-primary text-white shadow">

@@ -15,7 +15,7 @@ const Home = () => {
                <h4>Justify Your Practice</h4>
             </div>
          </div>
-         <div className="row">
+         <div className="row gy-3">
             {
                quizSubjects.map((subject) => <Topic key={subject.id} topic={subject}></Topic>)
             }

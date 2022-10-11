@@ -8,10 +8,10 @@ const Statistics = () => {
 
    return (
       <div className="py-3">
-         <div className="container">
+         <div className="container-md text-center">
             <p className="pb-4">Statistics of Quix data in number</p>
 
-            <BarChart width={700} height={300} data={data}>
+            <BarChart width={350} height={300} data={data}>
                <Bar dataKey="total" fill="#8884d8" />
                <Tooltip />
                <XAxis dataKey="name" />

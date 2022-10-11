@@ -6,6 +6,7 @@ import Blog from './component/Blog/Blog';
 import Home from './component/Home/Home';
 import QuizField from './component/QuizField/QuizField';
 import Statistics from './component/Statistics/Statistics';
+import Error from './component/Error/Error';
 
 function App() {
   const router = createBrowserRouter([
@@ -46,10 +47,14 @@ function App() {
           element: <Blog></Blog>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <Error></Error>
     }
   ]);
-
-
+  
+  
   return (
     <div className="App">
       <RouterProvider router={router} />
