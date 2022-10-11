@@ -5,6 +5,7 @@ import Main from './component/Main/Main';
 import Blog from './component/Blog/Blog';
 import Home from './component/Home/Home';
 import QuizField from './component/QuizField/QuizField';
+import Statistics from './component/Statistics/Statistics';
 
 function App() {
   const router = createBrowserRouter([
@@ -33,7 +34,10 @@ function App() {
           },
           element: <QuizField></QuizField>
         },
-
+        {
+          path: '/statistics',
+          element: <Statistics></Statistics>
+        },
         {
           path: '/blog',
           element: <Blog></Blog>

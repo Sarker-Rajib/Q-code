@@ -8,11 +8,11 @@ const Navbar = () => {
          <div className="container py-3">
             <div className="d-flex justify-content-between align-items-center">
                <div className="logo">
-                  <h3>Logo</h3>
+                  <h3>Q'Code Test</h3>
                </div>
                <div className="nav">
                   <Link to="/home">Home</Link>
-                  {/* <Link to="/home">Quiz</Link> */}
+                  <Link to="/statistics">Statistics</Link>
                   <Link to="/blog">Blog</Link>
                </div>
             </div>
