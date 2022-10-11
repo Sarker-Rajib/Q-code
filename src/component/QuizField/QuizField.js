@@ -13,7 +13,7 @@ const QuizField = () => {
                <h4>Topic : {name}</h4>
             </div>
             <div className="image">
-               <img width="160" className="img-fluid" src={logo} alt={name} />
+               <img width="160" className="img-fluid bg-warning rounded" src={logo} alt={name} />
             </div>
          </div>
          <div>

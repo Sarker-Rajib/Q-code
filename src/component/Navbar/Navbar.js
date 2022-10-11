@@ -4,11 +4,11 @@ import './Navbar.css' ;
 
 const Navbar = () => {
    return (
-      <div className="bg-light">
+      <div className="main-nav">
          <div className="container py-3">
             <div className="d-flex justify-content-between align-items-center">
                <div className="logo">
-                  <h3>Q'Code Test</h3>
+                  <h3 className="text-white">Q'Code Test</h3>
                </div>
                <div className="nav">
                   <Link to="/home">Home</Link>

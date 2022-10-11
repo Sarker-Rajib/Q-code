@@ -1,5 +1,16 @@
-a{
+.main-nav {
+   background: url(https://www.itmethods.com/wp-content/uploads/2017/01/background-header-technology.jpg) no-repeat center center/cover;
+   margin-bottom: 15px;
+}
+
+a {
    text-decoration: none;
    margin-left: 20px;
    font-size: 18px;
+   color: #fff;
+   transition: 0.3s;
+}
+
+a:hover {
+   color: rgb(112, 250, 174);
 }
