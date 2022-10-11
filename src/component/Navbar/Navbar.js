@@ -8,7 +8,7 @@ const Navbar = () => {
          <div className="container py-3">
             <div className="d-flex justify-content-between align-items-center">
                <div className="logo">
-                  <p>Logo</p>
+                  <h3>Logo</h3>
                </div>
                <div className="nav">
                   <Link to="/home">Home</Link>

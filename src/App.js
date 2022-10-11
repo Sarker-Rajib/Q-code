@@ -20,7 +20,13 @@ function App() {
           element: <Home></Home>
         },
 
-
+        {
+          path: '/home/:homeId',
+          loader: async ({ params }) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.homeId}`)
+          },
+          element: <QuizField></QuizField>
+        },
 
         {
           path: '/blog',
