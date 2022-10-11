@@ -11,7 +11,7 @@ const Quizes = (quiz) => {
    const questionSplit1 = question.split('<p>');
    const questionSplitted = questionSplit1[1].split('</p>');
 
-   // const notify = () => toast(`The answer of this Question is "${correctAnswer}"`);
+   const notify = () => toast(`The answer of this Question is "${correctAnswer}"`);
    const correctAnswerToast = () => toast(`Congrats ! The answer is Correct`);
    const falseAnswerToast = () => toast(`The answer is incorrect, please try again !`);
 
@@ -39,7 +39,7 @@ const Quizes = (quiz) => {
                <h5>Question: {questionSplitted}</h5>
             </div>
             <div className="col-2 text-end">
-               <EyeIcon onClick={showAnswer} className="eye" />
+               <EyeIcon onClick={notify} className="eye" />
             </div>
          </div>
          <div className="row g-2 pt-3">
