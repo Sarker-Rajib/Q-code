@@ -8,7 +8,7 @@ const QuizField = () => {
    
    return (
       <div className="container">
-         <div className="quiz-header d-flex align-items-center justify-content-between">
+         <div className="quiz-header d-flex align-items-center justify-content-between pb-2">
             <div className="name">
                <h4>Topic : {name}</h4>
             </div>
