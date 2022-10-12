@@ -15,6 +15,7 @@ const Navbar = () => {
                <div className="collapse navbar-collapse" id="navbarScroll">
                   <ul className="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
                      <li><Link to="/home">Home</Link></li>
+                     <li><Link to="/quiz">Quiz</Link></li>
                      <li><Link to="/statistics">Statistics</Link></li>
                      <li><Link to="/blog">Blog</Link></li>
                      <li><Link to="/404">404</Link></li>

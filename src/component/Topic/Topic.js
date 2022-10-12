@@ -13,7 +13,7 @@ const Topic = ({ topic }) => {
             <div className="pt-2">
                <h5>Topic: {name}</h5>
                <p className="mb-2">Quizes count: {total}</p>
-               <Link className="btn btn-info m-0 w-100 m-0 py-2 text-white" to={`/home/${id}`}>Take a test</Link>
+               <Link className="btn btn-info m-0 w-100 m-0 py-2 text-white" to={`/quiz/${id}`}>Take a test</Link>
             </div>
          </div>
       </div>

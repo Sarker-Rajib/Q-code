@@ -11,8 +11,9 @@ const Home = () => {
       <div className="container">
          <div className="header rounded shadow">
             <div className="content">
-               <h3>Take a test</h3>
-               <h4>Justify Your Practice</h4>
+               <h3>Practice And Learn</h3>
+               <h4>Let's have a tour, answer the questions.</h4>
+               <h3>It's a little practice that will memorize your old times.</h3>
             </div>
          </div>
          <div className="row gy-3">
