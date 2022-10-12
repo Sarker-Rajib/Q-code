@@ -7,13 +7,24 @@ import './Quizes.css';
 
 const Quizes = (quiz) => {
    const { question, options, correctAnswer } = quiz.quizes;
-   // correctAnswer
    const questionSplit1 = question.split('<p>');
    const questionSplitted = questionSplit1[1].split('</p>');
 
-   const notify = () => toast(`The correct answer is "${correctAnswer}"`);
-   const correctAnswerToast = () => toast(`Congrats ! The answer is Correct`);
-   const falseAnswerToast = () => toast(`The answer is incorrect, please try again !`);
+   const notify = () => toast.info(`Correct answer : "${correctAnswer}"`, {
+      position: "top-center",
+      autoClose: 5000,
+      theme: "colored",
+   });
+   const correctAnswerToast = () => toast.success('🦄 Congrats ! its the correct answer', {
+      position: "top-center",
+      autoClose: 5000,
+      theme: "colored",
+   });
+   const falseAnswerToast = () => toast.error('Sorry ! the answer is incorrect', {
+      position: "top-center",
+      autoClose: 5000,
+      theme: "colored",
+   });;
 
    const answerToast = (input) => {
       const answer = correctAnswer;
@@ -42,13 +53,7 @@ const Quizes = (quiz) => {
                options.map((option, index) => <QuizOptions key={index} option={option} question={question} answerToast={answerToast}></QuizOptions>)
             }
          </div>
-         <ToastContainer
-            position="top-center"
-            autoClose={2000}
-            closeOnClick
-            pauseOnFocusLoss
-            theme="dark"
-         />
+         <ToastContainer />
       </div>
    );
 };

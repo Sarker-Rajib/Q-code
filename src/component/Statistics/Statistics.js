@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { Tooltip, XAxis, YAxis, BarChart, Bar, CartesianGrid, Legend, ResponsiveContainer, ComposedChart } from "recharts";
+import { Tooltip, XAxis, YAxis, BarChart, Bar, ResponsiveContainer } from "recharts";
 
 const Statistics = () => {
    const info = useLoaderData();
@@ -15,7 +15,7 @@ const Statistics = () => {
                <div className="col-md-8">
                   <div style={{ width: '100%', height: 450 }}>
                      <ResponsiveContainer>
-                        <BarChart width={80} height={350} data={data}>
+                        <BarChart width={400} height={350} data={data}>
                            <Bar dataKey="total" fill="#8884d8" />
                            <Tooltip />
                            <XAxis dataKey="name" />

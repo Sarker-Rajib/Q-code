@@ -7,6 +7,7 @@ import Home from './component/Home/Home';
 import QuizField from './component/QuizField/QuizField';
 import Statistics from './component/Statistics/Statistics';
 import Error from './component/Error/Error';
+import QuizParent from './component/QuizParent/QuizParent';
 
 function App() {
   const router = createBrowserRouter([
@@ -33,7 +34,7 @@ function App() {
           loader: async () => {
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
-          element: <Home></Home>
+          element: <QuizParent></QuizParent>
         },
         {
           path: '/quiz/:quizId',
